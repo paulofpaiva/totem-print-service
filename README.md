@@ -10,9 +10,22 @@ I developed the React frontend and REST API for the hospital totem (self-service
 - Listens for HTTP requests on a local port (default: 3000)
 - Receives print jobs from the totem app and sends them to the USB thermal printer
 
+## Run
+
+```bash
+dotnet run --project src/TotemPrintService.Api/
+```
+
+Listens on `http://localhost:3000`.
+
 ## Usage
 
 The service exposes REST endpoints for different print types (appointment receipts, queue tickets, protocols, etc.). The totem frontend calls these endpoints when the user requests a print.
+
+**Endpoints:**
+- `POST /totem-print-service/print-comprovante-confirmacao` – appointment receipt
+- `POST /totem-print-service/print-comprovante-senha` – queue ticket
+- `POST /totem-print-service/print-comprovante-protocolo` – ID card protocol
 
 ## Tech Stack
 
