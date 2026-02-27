@@ -12,4 +12,8 @@
     <ProjectReference Include="..\TotemPrintService.Infrastructure\TotemPrintService.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="..\TotemPrintService.Infrastructure\Assets\logo-scristovao-comprovante.png" Link="Assets\logo-scristovao-comprovante.png" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>
