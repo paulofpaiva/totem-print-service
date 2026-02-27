@@ -3,24 +3,13 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-# Cursor - never commit
-.cursor/
-
-# Environment and secrets - never commit
+# Environment and secrets
 .env
 .env.*
 *.env
 .env.local
 .env.development
 .env.production
-
-# Legacy code - kept locally for reference, not in repo
-TotemPrintService_PFP.sln
-TotemPrintService_PFP.csproj
-/Program.cs
-/AppSettings.cs
-/PFP/
-/Marcelo_Pacheco/
 
 # macOS
 .DS_Store
